@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Triva AI | Travel Agent & Assistant</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans for clean, elegant typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Marked.js for Markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="bot-info">
+        <div class="avatar-wrapper">
+          <div class="avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <span class="status-indicator" title="Online"></span>
+        </div>
+        <div class="bot-details">
+          <h2>Triva AI</h2>
+          <p>Personal Travel Consultant</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span>Powered by Gemini</span>
+      </div>
+    </header>
+
+    <!-- Chat Message Container -->
+    <main id="chat-box" class="chat-box">
+      <div class="message bot">
+        <p>Halo! Saya <strong>Triva</strong>, travel agent pribadi Anda ✈️🏝️</p>
+        <p>Mau liburan ke mana dan berapa lama? Beritahu saya preferensi Anda, dan saya buatkan itinerary terbaik!</p>
+      </div>
+    </main>
+
+    <!-- Chat Form Input -->
+    <footer class="chat-footer">
+      <form id="chat-form">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="user-input" 
+            placeholder="Ketik tujuan liburan atau pertanyaan travel..." 
+            autocomplete="off" 
+            required 
+          />
+        </div>
+        <button type="submit" id="send-button" aria-label="Kirim Pesan">
+          <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
